@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dEFaCeD – QR Code Demo</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            color: #ff1a1a;
+            height: 100%;
+            width: 100%;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .ascii {
+            white-space: pre;
+            font-size: 12px;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .warning {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .blink {
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .explanation {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #ff6666;
+        }
+
+        .disclaimer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #888888;
+        }
+
+        .divider {
+            margin: 20px auto;
+            width: 60%;
+            border-top: 1px solid #551111;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ASCII-Art Headline -->
+        <div class="ascii">
+ __________                   
+\____    /________________   
+  /     //  _ \_  __ \__  \  
+ /     /(  <_> )  | \// __ \_
+/_______ \____/|__|  (____  /
+        \/                \/ 
+
+        </div>
+
+        <!-- Shock part -->
+        <div class="title blink">
+          You got hacked by Zora  
+        </div>
+
+        <div class="warning">
+            You fell for my trap.<br>
+            Unauthorized access via a scanned QR code.<br>
+            Data exfiltration in progress...
+        </div>
+
+        <div class="warning">
+            &gt; Connecting to remote server...<br>
+            &gt; Collecting stored passwords...<br>
+            &gt; Reading location and browser data...
+        </div>
+
+        <div class="divider"></div>
+
+       
+
+        
+    </div>
+</body>
+</html>
